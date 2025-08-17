@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Contact</title>
+    <style>
+        body{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="whatsapp-contact">
+         <form action="">
+             <input type="text" id="name" placeholder="Enter your name" ><br>
+                <input type="text" id="mobile" placeholder="Mobile Number" ><br>
+                <input type="text" id="email" placeholder="Email ID" ><br>
+                <textarea id="message" cols="25" rows="5" ></textarea><br>
+                <input type="submit" onclick="Whatsapp()" value="Send Enquiry">
+         </form>
+    </div>
+    <script>
+        function Whatsapp(){
+           var name = document.getElementById("name").value;
+           var mobile = document.getElementById("mobile").value;
+           var email = document.getElementById("email").value;
+           var message = document.getElementById("message").value;
+
+           var whatsappUrl = `https://api.whatsapp.com/send?phone=919817972462&text=Name: ${name}%0AMobile: ${mobile}%0AEmail: ${email}%0AMessage: ${message}`;
+
+           window.open(whatsappUrl , '_blank').focus();
+        }
+    </script>
+</body>
+</html>

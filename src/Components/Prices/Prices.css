@@ -1,0 +1,215 @@
+.prices{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px 70px;
+}
+.prices-all{
+      display: flex;
+    gap:0px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.prices-title{
+     text-align: center;
+  padding: 20px;
+  background: #020024;
+background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  color: #eee;
+  font-size: 20px;
+  width: 100%;
+  height: 70px;
+}
+.list1{
+    background: linear-gradient(90deg, 
+  rgb(11, 158, 240),  /* Blue */
+  rgb(254, 61, 202),  /* Pink */
+  rgb(247, 157, 57)   /* Orange */
+);
+  width: 100%;
+}
+.list1 .header1{
+    background: linear-gradient(90deg, 
+  rgb(11, 158, 240),  /* Blue */
+  rgb(254, 61, 202),  /* Pink */
+  rgb(247, 157, 57)   /* Orange */
+);
+    height: 40px;
+    
+    margin-top: 14px;
+}
+.header1 {
+  display: flex;
+  justify-content: space-around;
+   
+  gap: 30px;
+  color: white;
+  text-align: center;
+ 
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 24px;
+   align-items: flex-start;
+}
+.list1 .header1 h2{
+      display: flex;
+    gap:0px;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+.horizontal-line {
+  height: 6px;
+  background-color: #0c0c0c;
+  width: 100%;
+  margin: 20px 0;
+
+}
+.list2{
+    background-color: aqua;
+}
+.rateCard {
+  
+  padding: 20px;
+  color: rgb(12, 12, 12);
+ font-weight: 50px;
+ 
+}
+
+.rateRow {
+  display: grid;
+  grid-template-columns: 2.7fr 2fr 1fr; /* equal column widths */
+  /* space between columns */
+  margin-bottom: 10px;
+  
+}
+
+.rateRow p{
+  color: black;
+}
+.horizontal-lines {
+  height: 6px;
+  background-color: #0c0c0c;
+  width: 100%;
+  margin: 20px 0;
+}
+.header2{
+ background-color:linear-gradient(90deg,rgba(25, 21, 43, 1) 0%, rgba(51, 53, 212, 1) 50%, rgba(9, 179, 0, 1) 100%) ;
+}
+.list2{
+    background: linear-gradient(90deg, 
+  rgb(11, 158, 240),  /* Blue */
+  rgb(254, 61, 202),  /* Pink */
+  rgb(247, 157, 57)   /* Orange */
+);
+  width: 100%;
+}
+.list2 .header2{
+   background-color: linear-gradient(90deg,rgba(25, 21, 43, 1) 0%, rgba(51, 53, 212, 1) 50%, rgba(9, 179, 0, 1) 100%);
+    height: 40px;
+    
+    margin-top: 14px;
+}
+.header2 {
+  display: flex;
+  justify-content: space-around;
+   
+  gap: 30px;
+  color: white;
+  text-align: center;
+ 
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 24px;
+   align-items: flex-start;
+}
+.list2 .header2 h2{
+      display: flex;
+    gap:0px;
+     grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 649px) {
+  /* Stack columns vertically */
+  .prices-all {
+    flex-direction: column;
+    gap: 30px;
+   
+  }
+  .prices{
+    width: 90%;
+    padding-left: 0;
+    margin-left: 0px;
+  }
+ 
+  .list1, .list2 {
+    width: 120%;
+    font-size: 14px;
+    
+  }
+  
+  /* Adjust header layout */
+  .header1, .header2 {
+    flex-direction: row;
+    gap: 0.5px;
+    
+    font-size: 18px;
+  }
+
+  .service {
+    font-size: 14px;
+    margin-top: 8px;
+    align-items: flex-start;
+    margin-left: 3px;
+    font-family: verdana;
+    margin-bottom: 0 !important;
+    
+  }
+  .l2{
+    width: 100%;
+    display: block !important;
+    text-align: start;
+  }
+  .l3{
+    display: block;
+    text-align: start;
+  }
+
+  /* Make rate rows fit smaller screens */
+  .rateRow {
+    grid-template-columns: 1.6fr 1.5fr 1fr;
+    gap: 5px;
+  }
+  
+  .rateRow p {
+    font-size: 14px;
+    word-break: break-word;
+    font-weight: 400px;
+  }
+
+  /* Reduce padding for compact view */
+  .rateCard {
+    padding: 10px;
+  
+  }
+
+  /* Title adjustments */
+  .prices-title {
+    font-size: 14px;
+    padding: 18px;
+    height: 25px;
+    width: 120% !important;
+    
+  }
+  .prices-title h1{
+    width: 120% !important;
+
+  }
+}

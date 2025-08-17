@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.navbar{
+    display: flex;
+     align-items: center;
+    justify-content:space-between;
+    margin-top: 0px ;
+    padding-left: 5px;
+    font-family: "Poppins";
+}
+.menu{
+    height: 40px;
+    width: 40px;
+}
+.nav-menu .close{
+    height: 40px;
+    width: 40px;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    margin: 0;
+    font-size: 20px;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.nav-menu li a:hover {
+    color: rgb(42, 115, 252);
+    transition:  0.3s ;
+   font-weight: 700;
+    text-decoration: none;
+}
+.nav-menu  img{
+    width: 160px;
+    height: 120px;
+    
+}
+.navbar .nav-menu h2 p {
+    font-size: 35px;
+    color: #FF0000;
+    margin: 0;
+    justify-content: start;
+    align-items: start;
+    
+}
+.navbar .nav-menu h2  {
+    font-size: 30px;
+    
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+.call{
+    
+    border-radius: 50px;
+    background: rgb(120, 247, 82);
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.call:hover{
+    background: rgb(120, 247, 82);
+    color:rgb(120, 247, 82);
+    transition: 0.3s;
+}
+.call img{
+    height: 18px;
+    width: 25px;
+    
+}
+.menu{
+    display: none;
+}
+.logo{
+    height: 120px;
+    width: 180px;
+}
+.close{
+    display: none;
+}
+@media screen and (max-width: 649px) {
+    html{
+        scroll-behavior: smooth;
+    }
+    .navbar{
+        margin: 10px 20px;
+        justify-content: space-between;
+        align-items: self-start;
+       
+    }
+    .anchor-link{
+        font-size: 16px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-top: 10px;
+        right: 30px;
+        justify-content: space-between;
+    }
+    .close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left:200px ;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background: #22C1C3;
+background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+border-top-left-radius: 20px;
+margin-top: 10px;
+        width: 250px;
+        height: 60%;
+        z-index: 2;
+        
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .logo{
+        height: 75px;
+        width: 100px;
+        text-align: start;
+        margin-left: 0;
+    }
+}
