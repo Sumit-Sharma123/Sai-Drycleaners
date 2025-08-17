@@ -15,9 +15,8 @@ const About = () => {
                     <img src={aboutImage} alt="" className="sai" />
                 </div>
                 <div className="about-right">
-                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2019, a dry cleaning startup named 
-                      SAI DRYCLEANERS was launched by <a style={{color: "blue"}}> Sumit Sharma</a> 
-                          &nbsp; with a vision to modernize and simplify garment care.
+                      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2019, a dry cleaning startup named <a style={{color: "blue"}}>SAI DRYCLEANERS</a> 
+                     our vision to modernize and simplify garment care.
                           Starting in a small rented unit with limited resources and a basic dry cleaning setup,
                            they focused on providing high-quality services to a handful of residential customers in 
                            their local area. Their commitment to stain removal, fabric safety, and professional customer
