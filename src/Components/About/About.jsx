@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div className="about-right">
                       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In 2019, a dry cleaning startup named 
-                      SAI DRYCLEANERS was launched by <a style={{color: "blue"}}> Sumit Sharma</a> 
+                      SAI DRYCLEANERS was launched by <a style={{color: "blue"}}> Neeraj Sharma</a> 
                           &nbsp; with a vision to modernize and simplify garment care.
                           Starting in a small rented unit with limited resources and a basic dry cleaning setup,
                            they focused on providing high-quality services to a handful of residential customers in 
